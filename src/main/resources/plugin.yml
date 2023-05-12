@@ -1,0 +1,8 @@
+name: BedrockChestUI
+version: '${project.version}'
+main: ltd.rymc.bedrock.ChestUI
+api-version: 1.13
+depend: [ floodgate, ProtocolLib ]
+authors: [ RENaa_FD ]
+description: 让基岩版可以更好的显示箱子
+website: https://rymc.ltd/
