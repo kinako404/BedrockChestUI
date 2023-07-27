@@ -1,5 +1,9 @@
 package ltd.rymc.bedrock;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.inventory.Containers;
+
+import java.awt.*;
 import java.util.HashMap;
 
 public class ReflectMap {
@@ -9,6 +13,7 @@ public class ReflectMap {
 
     static {
 
+        registriesMap.put("v1_20_R1", "net.minecraft.core.registries.BuiltInRegistries");
         registriesMap.put("v1_19_R3", "net.minecraft.core.registries.BuiltInRegistries");
         registriesMap.put("v1_19_R2", "net.minecraft.core.registries.BuiltInRegistries");
         registriesMap.put("v1_19_R1", "net.minecraft.core.IRegistry");
@@ -16,6 +21,7 @@ public class ReflectMap {
         registriesMap.put("v1_18_R1", "net.minecraft.core.IRegistry");
         registriesMap.put("v1_17_R1", "net.minecraft.core.IRegistry");
 
+        keyFieldMap.put("v1_20_R1", "s");
         keyFieldMap.put("v1_19_R3", "r");
         keyFieldMap.put("v1_19_R2", "r");
         keyFieldMap.put("v1_19_R1", "ah");
@@ -23,6 +29,7 @@ public class ReflectMap {
         keyFieldMap.put("v1_18_R1", "aj");
         keyFieldMap.put("v1_17_R1", "ai");
 
+        keyMethodMap.put("v1_20_R1", "b");
         keyMethodMap.put("v1_19_R3", "b");
         keyMethodMap.put("v1_19_R2", "b");
         keyMethodMap.put("v1_19_R1", "b");
